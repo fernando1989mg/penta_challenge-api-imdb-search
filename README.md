@@ -45,37 +45,37 @@ Javascript con nodejs y Nestjs como framework
 *   /imdb/axe (respuesta resumida) poner atención a los campos "runtimeStr" y "linkActors":
 
     ```json
-{
-    "movies": [
         {
-            "id": "tt0108174",
-            "image": "https://imdb-api.com/images/original/MV5BN2VjOTA4MDEtYmZiYy00MTJiLWEwZTItNzM4Y2IwMzdjNjgzXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_Ratio0.6837_AL_.jpg",
-            "title": "So I Married an Axe Murderer",
-            "description": "(1993)",
-            "runtimeStr": "93 min",
-            "genres": "Comedy, Romance",
-            "genreList": [
-                {
-                    "key": "Comedy",
-                    "value": "Comedy"
-                }
-            ],
-            "contentRating": "PG-13",
-            "imDbRating": "6.4",
-            "imDbRatingVotes": "38269",
-            "metacriticRating": "54",
-            "plot": "A San Francisco poet who fears commitment suspects his girlfriend may have a knack for killing off her significant others.",
-            "stars": "Thomas Schlamme, Mike Myers, Nancy Travis, Anthony LaPaglia, Amanda Plummer",
-            "starList": [
+            "movies": [
                 {
                     "id": "tt0108174",
-                    "name": "Thomas Schlamme"
+                    "image": "https://imdb-api.com/images/original/MV5BN2VjOTA4MDEtYmZiYy00MTJiLWEwZTItNzM4Y2IwMzdjNjgzXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_Ratio0.6837_AL_.jpg",
+                    "title": "So I Married an Axe Murderer",
+                    "description": "(1993)",
+                    "runtimeStr": "93 min",
+                    "genres": "Comedy, Romance",
+                    "genreList": [
+                        {
+                            "key": "Comedy",
+                            "value": "Comedy"
+                        }
+                    ],
+                    "contentRating": "PG-13",
+                    "imDbRating": "6.4",
+                    "imDbRatingVotes": "38269",
+                    "metacriticRating": "54",
+                    "plot": "A San Francisco poet who fears commitment suspects his girlfriend may have a knack for killing off her significant others.",
+                    "stars": "Thomas Schlamme, Mike Myers, Nancy Travis, Anthony LaPaglia, Amanda Plummer",
+                    "starList": [
+                        {
+                            "id": "tt0108174",
+                            "name": "Thomas Schlamme"
+                        }
+                    ],
+                    "linkActors": "http://localhost:3000/imdb/axe/tt0108174/actors"
                 }
-            ],
-            "linkActors": "http://localhost:3000/imdb/axe/tt0108174/actors"
+            ]
         }
-    ]
-}
     ```
     
     
