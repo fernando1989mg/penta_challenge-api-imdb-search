@@ -141,6 +141,42 @@ Javascript con nodejs y Nestjs como framework
     ]
     ```
     
+## Cómo está organizado el proyecto
+
+*   Realmente es un proyecto muy pequeño por lo que no me extenderé mucho y explicaré lo relevante, dentro de la carpeta **src** encontrará:
+
+<table>
+<tr>
+    <th>Carperta&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th>Descripción</th>
+</tr>
+<tr>
+    <td>common</td>
+    <td>contiene interfaces o apis de tercero que son transversales para cualquier otro módulo </td>
+<tr>
+<tr>
+    <td>modules</td>
+    <td>contiene los módulos del proyecto que en este caso es solo uno, llamado search</td>
+<tr>
+<tr>
+    <td>common/api-providers</td>
+    <td>la carpeta api-providers contiene las clases que se usan para llamar a apis de terceros, en este caso la api de IMDB</td>
+<tr>
+<tr>
+    <td>common/interfaces</td>
+    <td>contiene las interfaces que son comunes para todos los módulos</td>
+<tr>
+<tr>
+    <td>modules/search</td>
+    <td>contiene los archivos que necesarios para que funcione el módule, es decir, controller.ts, service.ts y module.ts</td>
+<tr>
+<tr>
+    <td>modules/search/Test</td>
+    <td>contiene los test unitarios para controller y service</td>
+<tr>
+</table>
+    
+    
     
 ## Cómo se están cumpliendo los requerimientos para producciones Viking?
 
