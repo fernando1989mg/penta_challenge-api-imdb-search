@@ -1,5 +1,7 @@
 # PentaFinanciero Challenge - By Fernando Muñoz
 
+Link del desafio https://github.com/penta-financiero/valhalla-challenge
+
 Este proyecto es una API rest que consume la api de IMDB para listar películas
 y capítulos de series que tengan la palabra Viking o Axe, está programado en 
 Javascript con nodejs y Nestjs como framework
