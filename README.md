@@ -45,100 +45,100 @@ Javascript con nodejs y Nestjs como framework
 *   /imdb/axe (respuesta resumida) poner atención a los campos "runtimeStr" y "linkActors":
 
     ```json
-        {
-            "movies": [
-                {
-                    "id": "tt0108174",
-                    "image": "https://imdb-api.com/images/original/MV5BN2VjOTA4MDEtYmZiYy00MTJiLWEwZTItNzM4Y2IwMzdjNjgzXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_Ratio0.6837_AL_.jpg",
-                    "title": "So I Married an Axe Murderer",
-                    "description": "(1993)",
-                    "runtimeStr": "93 min",
-                    "genres": "Comedy, Romance",
-                    "genreList": [
-                        {
-                            "key": "Comedy",
-                            "value": "Comedy"
-                        }
-                    ],
-                    "contentRating": "PG-13",
-                    "imDbRating": "6.4",
-                    "imDbRatingVotes": "38269",
-                    "metacriticRating": "54",
-                    "plot": "A San Francisco poet who fears commitment suspects his girlfriend may have a knack for killing off her significant others.",
-                    "stars": "Thomas Schlamme, Mike Myers, Nancy Travis, Anthony LaPaglia, Amanda Plummer",
-                    "starList": [
-                        {
-                            "id": "tt0108174",
-                            "name": "Thomas Schlamme"
-                        }
-                    ],
-                    "linkActors": "http://localhost:3000/imdb/axe/tt0108174/actors"
-                }
-            ]
-        }
+    {
+        "movies": [
+            {
+                "id": "tt0108174",
+                "image": "https://imdb-api.com/images/original/MV5BN2VjOTA4MDEtYmZiYy00MTJiLWEwZTItNzM4Y2IwMzdjNjgzXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_Ratio0.6837_AL_.jpg",
+                "title": "So I Married an Axe Murderer",
+                "description": "(1993)",
+                "runtimeStr": "93 min",
+                "genres": "Comedy, Romance",
+                "genreList": [
+                    {
+                        "key": "Comedy",
+                        "value": "Comedy"
+                    }
+                ],
+                "contentRating": "PG-13",
+                "imDbRating": "6.4",
+                "imDbRatingVotes": "38269",
+                "metacriticRating": "54",
+                "plot": "A San Francisco poet who fears commitment suspects his girlfriend may have a knack for killing off her significant others.",
+                "stars": "Thomas Schlamme, Mike Myers, Nancy Travis, Anthony LaPaglia, Amanda Plummer",
+                "starList": [
+                    {
+                        "id": "tt0108174",
+                        "name": "Thomas Schlamme"
+                    }
+                ],
+                "linkActors": "http://localhost:3000/imdb/axe/tt0108174/actors"
+            }
+        ]
+    }
     ```
     
     
 *   /imdb/viking (respuesta resumida) poner atención a los campos "runtimeStr" y "linkDirectors":
 
     ```json
-{
-    "movies": [
-        {
-            "id": "tt2290553",
-            "image": "https://imdb-api.com/images/original/MV5BNTI0ZjljMzMtNDFlZi00YTM1LTgxY2EtN2Q1ZjNiZTNkMzQ3L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_Ratio0.6837_AL_.jpg",
-            "title": "Northmen - A Viking Saga",
-            "description": "(2014)",
-            "runtimeStr": "97 min",
-            "genres": "Action, Drama, History",
-            "genreList": [
-                {
-                    "key": "Action",
-                    "value": "Action"
-                }
-            ],
-            "contentRating": "R",
-            "imDbRating": "5.4",
-            "imDbRatingVotes": "9944",
-            "metacriticRating": "50",
-            "plot": "A band of Vikings cross enemy lines and a panicked race begins. The losers will pay with their lives.",
-            "stars": "Claudio Fäh, Tom Hopper, Ryan Kwanten, Ken Duken, Charlie Murphy",
-            "starList": [
-                {
-                    "id": "tt2290553",
-                    "name": "Claudio Fäh"
-                }
-            ],
-            "linkDirectors": "http://localhost:3000/imdb/viking/tt2290553/directors"
-        }
-    ]
-}
+    {
+        "movies": [
+            {
+                "id": "tt2290553",
+                "image": "https://imdb-api.com/images/original/MV5BNTI0ZjljMzMtNDFlZi00YTM1LTgxY2EtN2Q1ZjNiZTNkMzQ3L2ltYWdlXkEyXkFqcGdeQXVyNTAyODkwOQ@@._V1_Ratio0.6837_AL_.jpg",
+                "title": "Northmen - A Viking Saga",
+                "description": "(2014)",
+                "runtimeStr": "97 min",
+                "genres": "Action, Drama, History",
+                "genreList": [
+                    {
+                        "key": "Action",
+                        "value": "Action"
+                    }
+                ],
+                "contentRating": "R",
+                "imDbRating": "5.4",
+                "imDbRatingVotes": "9944",
+                "metacriticRating": "50",
+                "plot": "A band of Vikings cross enemy lines and a panicked race begins. The losers will pay with their lives.",
+                "stars": "Claudio Fäh, Tom Hopper, Ryan Kwanten, Ken Duken, Charlie Murphy",
+                "starList": [
+                    {
+                        "id": "tt2290553",
+                        "name": "Claudio Fäh"
+                    }
+                ],
+                "linkDirectors": "http://localhost:3000/imdb/viking/tt2290553/directors"
+            }
+        ]
+    }
     ```
     
 *   /imdb/viking/{id película o serie}/directors
 
     ```json
-[
-    {
-        "id": "nm0281507",
-        "name": "Richard Fleischer",
-        "description": ""
-    }
-]
+    [
+        {
+            "id": "nm0281507",
+            "name": "Richard Fleischer",
+            "description": ""
+        }
+    ]
     ```
     
     
 *   /imdb/axe/{id película o serie}/actors
 
     ```json
-[
-    {
-        "id": "nm0000196",
-        "image": "https://imdb-api.com/images/original/MV5BMTY0MTM1MTM5Nl5BMl5BanBnXkFtZTcwNzA1OTM3MQ@@._V1_Ratio0.7273_AL_.jpg",
-        "name": "Mike Myers",
-        "asCharacter": "Charlie Mackenzie / Stuart Mackenzie"
-    }
-]
+    [
+        {
+            "id": "nm0000196",
+            "image": "https://imdb-api.com/images/original/MV5BMTY0MTM1MTM5Nl5BMl5BanBnXkFtZTcwNzA1OTM3MQ@@._V1_Ratio0.7273_AL_.jpg",
+            "name": "Mike Myers",
+            "asCharacter": "Charlie Mackenzie / Stuart Mackenzie"
+        }
+    ]
     ```
     
     
