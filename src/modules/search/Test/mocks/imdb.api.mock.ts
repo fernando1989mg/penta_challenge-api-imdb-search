@@ -1,22 +1,22 @@
 import { NotFoundException } from '@nestjs/common';
 import { FullCast } from 'src/common/interfaces/fullcast.interface';
 import { ReqResAdvanceSearch } from 'src/common/interfaces/search.interface';
-import {FullCastMock, ReqResAdvanceSearchMockVikingMovie, ReqResAdvanceSearchMockAxeMovie, ReqResAdvanceSearchMockVikingEpisode, ReqResAdvanceSearchMockAxeEpisode} from './const.mock';
+import {AppConstantsMock} from './constants';
 
 export class ImdbAPIMock {
     public async search(query:string) : Promise<ReqResAdvanceSearch> {
         if(query.includes("viking") && query.includes("Movie")){
 
-            return ReqResAdvanceSearchMockVikingMovie;
+            return AppConstantsMock.General.ReqResAdvanceSearchMockVikingMovie;
         }else if(query.includes("axe") && query.includes("Movie")){
 
-            return ReqResAdvanceSearchMockAxeMovie;
+            return AppConstantsMock.General.ReqResAdvanceSearchMockAxeMovie;
         }else if(query.includes("viking") && query.includes("Episode")){
 
-            return ReqResAdvanceSearchMockVikingEpisode;
+            return AppConstantsMock.General.ReqResAdvanceSearchMockVikingEpisode;
         }else if(query.includes("axe") && query.includes("Episode")){
 
-            return ReqResAdvanceSearchMockAxeEpisode;
+            return AppConstantsMock.General.ReqResAdvanceSearchMockAxeEpisode;
         }
     };
     
@@ -24,6 +24,6 @@ export class ImdbAPIMock {
         if(id==="tt01"){
             throw new NotFoundException('ID not found'); 
         }
-        return FullCastMock;
+        return AppConstantsMock.General.FullCastMock;
     };
 }

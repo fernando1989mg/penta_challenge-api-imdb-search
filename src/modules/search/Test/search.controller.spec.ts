@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { SearchVikingMock, DirectorsMock, ActorsMock, SearchAxeMock } from './mocks/const.mock';
+import { AppConstantsMock } from './mocks/constants';
 import { SearchServiceMock } from './mocks/search.service.mock';
 import { SearchController } from '../search.controller';
 import { SearchService } from '../search.service';
@@ -30,19 +30,19 @@ describe('SearchController', () => {
   });
 
   it('[Controller] should to get films list with the word viking in the title', async () => {
-    expect(await controller.searchViking()).toEqual(SearchVikingMock);
+    expect(await controller.searchViking()).toEqual(AppConstantsMock.General.SearchVikingMock);
 
     controller.searchViking();
   });
 
   it('[Controller] should to get films list with the word axe in the title', async () => {
-    expect(await controller.searchAxe()).toEqual(SearchAxeMock);
+    expect(await controller.searchAxe()).toEqual(AppConstantsMock.General.SearchAxeMock);
 
     controller.searchAxe();
   });
 
   it('[Controller] should to get directos list by movie id', async () => {
-    expect(await controller.getDirectors('tt0052365')).toEqual(DirectorsMock);
+    expect(await controller.getDirectors('tt0052365')).toEqual(AppConstantsMock.General.DirectorsMock);
 
     controller.getDirectors('tt0052365');
   });
@@ -55,7 +55,7 @@ describe('SearchController', () => {
   });
 
   it('[Controller] should to get actors list by movie/episode id', async () => {
-    expect(await controller.getActors('tt0108174')).toEqual(ActorsMock);
+    expect(await controller.getActors('tt0108174')).toEqual(AppConstantsMock.General.ActorsMock);
 
     controller.getActors('tt0108174');
   });

@@ -1,6 +1,6 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { ImdbAPI } from '../../../common/api-providers/imdb.api';
-import { ActorsMock, DirectorsMock, SearchVikingMock, SearchAxeMock } from './mocks/const.mock';
+import { AppConstantsMock } from './mocks/constants';
 import { ImdbAPIMock } from './mocks/imdb.api.mock';
 import { SearchService } from '../search.service';
 import { REQUEST } from '@nestjs/core';
@@ -44,19 +44,19 @@ describe('SearchService', () => {
   });
 
   it('[Service] should to get films list with the word viking in the title', async () => {
-    expect(await service.searchViking()).toEqual(SearchVikingMock);
+    expect(await service.searchViking()).toEqual(AppConstantsMock.General.SearchVikingMock);
 
     service.searchViking();
   });
 
   it('[Service] should to get films list with the word axe in the title', async () => {
-    expect(await service.searchAxe()).toEqual(SearchAxeMock);
+    expect(await service.searchAxe()).toEqual(AppConstantsMock.General.SearchAxeMock);
 
     service.searchAxe();
   });
 
   it('[Service] should to get directors list by movie id', async () => {
-    expect(await service.getDirectors('tt0052365')).toEqual(DirectorsMock);
+    expect(await service.getDirectors('tt0052365')).toEqual(AppConstantsMock.General.DirectorsMock);
 
     service.getDirectors('tt0052365');
   });
@@ -69,7 +69,7 @@ describe('SearchService', () => {
   });
 
   it('[Service] should to get actors list by movie/episode id', async () => {
-    expect(await service.getActors('tt0108174')).toEqual(ActorsMock);
+    expect(await service.getActors('tt0108174')).toEqual(AppConstantsMock.General.ActorsMock);
 
     service.getActors('tt0108174');
   });
