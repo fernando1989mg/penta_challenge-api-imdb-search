@@ -175,6 +175,8 @@ Javascript con nodejs y Nestjs como framework
     <td>contiene los test unitarios para controller y service</td>
 <tr>
 </table>
+
+*   por último, cabe mencionar que en la raiz del proyecto encontrará un archivo .env.development donde se han declarado variables de entorno
     
     
     
